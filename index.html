@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="outer-form-container">
+      <div class="inner-form-container">
+        <div class="leaves-image">
+          <img src="leaves.jpg" alt="leaves-image" id="leaves" />
+          <div class="odin-image">
+            <img src="odin-lined.png" alt="odin-linked" id="odin-linked" />
+            <p class="odin-text">ODIN</p>
+          </div>
+        </div>
+
+        <div class="form-information">
+          <div class="forms">
+            <div>
+              <p class="form-heading">
+                This is not a real online service! You known you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up now to get started. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Magni, dolor id hic labore quae
+                possimus. Magni, dolor id hic labore quae possimus.
+              </p>
+              <p class="note">You know you want to</p>
+            </div>
+
+            <form action="#" method="get" class="form">
+              <div>
+                <label for="first_name " id="first_name">FIRST NAME</label>
+                <br />
+                <input type="text" class="first_name" name="first_name" />
+              </div>
+
+              <div>
+                <label for="last_name " id="last_name">LAST NAME</label>
+                <br />
+                <input
+                  type="text"
+                  id="last_name"
+                  class="last_name"
+                  name="last_name"
+                />
+              </div>
+
+              <div>
+                <label for="email " id="email">EMAIL</label>
+                <br />
+                <input type="email" id="email" name="email" class="email" />
+              </div>
+
+              <div>
+                <label for="number " id="number">PHONE NUMBER</label>
+                <br />
+                <input type="number" class="number" name="number" max="10" />
+              </div>
+
+              <div>
+                <label for="password " id="password">PASSWORD</label>
+                <br />
+                <input type="password" class="password" name="password" />
+                <i class="fa-solid fa-eye fa-eye-slash pass"></i>
+              </div>
+
+              <div>
+                <label for="confirm_password " id="confirm_password"
+                  >CONFIRM PASSWORD</label
+                >
+                <br />
+                <input
+                  type="password"
+                  class="confirm-password"
+                  name="confirm_password"
+                />
+                <i class="fa-solid fa-eye fa-eye-slash conf-pass"></i>
+              </div>
+            </form>
+            <div class="pass-info"></div>
+            <div class="pass-note"></div>
+            <div class="create-btn">
+              <div class="pass-contain">
+                Your Password should contain: (a-z), (A-Z), (0-9), (!@#$&*)
+              </div>
+              <button type="submit" id="create-btn">Create Account</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="create-account-info">
+          <h1 class="heading">User Name</h1>
+          <p class="user-account">
+            User Account name is created:
+            <span class="new-user-name"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Licorice&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#leaves {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+#odin-linked {
+  height: 90px;
+  width: 75px;
+  position: relative;
+}
+
+.odin-text {
+  position: relative;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.odin-image {
+  display: flex;
+  align-items: center;
+  top: 8rem;
+  position: relative;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.459);
+  padding: 1rem 8rem;
+}
+
+.form-information {
+  margin-left: 35rem;
+  margin-right: 4rem;
+  /* display: none; */
+}
+
+.create-account-info {
+  margin-left: 35rem;
+  margin-right: 4rem;
+  text-align: center;
+}
+
+.user-account,
+.heading {
+  display: none;
+  margin: 1rem;
+}
+
+.form-heading {
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+.note {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  column-gap: 9rem;
+  row-gap: 2rem;
+}
+
+.first_name,
+#first_name,
+#last_name,
+#email,
+#number,
+#password,
+#confirm_password {
+  font-size: 0.9rem;
+}
+
+.number,
+.password,
+.confirm-password {
+  width: 180px;
+  height: 1.3rem;
+  outline: none;
+}
+
+#email {
+  outline: none;
+}
+
+#last_name:focus {
+  border: 1px solid blue;
+  outline: none;
+  border-radius: 0.2rem;
+  height: 1.35rem;
+}
+
+.first_name:focus {
+  border: 1px solid blue;
+  outline: none;
+  border-radius: 0.2rem;
+  height: 1.35rem;
+}
+
+.first_name,
+.last_name,
+.email,
+.number,
+.password,
+.confirm-password {
+  border: 1px solid black;
+  border-radius: 0.2rem;
+}
+
+#create-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 2.4rem;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #596d48;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.new-user-name {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pass-info {
+  margin-top: 2rem;
+}
+
+.password {
+  position: absolute;
+}
+
+.confirm-password {
+  position: absolute;
+  margin-left: 6.7rem;
+}
+
+#confirm_password {
+  margin-left: 6.7rem;
+}
+
+.pass {
+  position: relative;
+  left: 10rem;
+  top: 0.1rem;
+}
+
+.conf-pass {
+  position: relative;
+  left: 16.7rem;
+  top: 0.1rem;
+}
+
+.pass-contain {
+  margin-top: 1rem;
+}
+
+.pass-note {
+  font-weight: 600;
+  margin-top: 0.7rem;
+}
+
+#create-btn {
+  cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+  #leaves {
+    width: 100%;
+    height: 250px;
+  }
+
+  .odin-image {
+    height: 90px;
+    top: 4rem;
+    width: 100%;
+  }
+
+  #odin-linked {
+    height: 69px;
+    margin-left: -2rem;
+  }
+
+  .odin-text {
+    font-size: 3.3rem;
+  }
+
+  .form-information {
+    margin-top: 200px;
+    margin-left: 1rem;
+  }
+
+  .form-heading,
+  .note {
+    display: none;
+  }
+
+  .first_name,
+  .last_name,
+  .email,
+  .number,
+  .password,
+  .confirm-password {
+    width: 120px;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+  }
+
+  .pass {
+    left: 6.2rem;
+    top: 0rem;
+  }
+
+  .password {
+    margin-right: 0rem;
+  }
+
+  .confirm-password {
+    margin-left: 3.6rem;
+  }
+
+  #confirm_password {
+    margin-left: 3.6rem;
+  }
+
+  .conf-pass {
+    left: 10rem;
+    top: 0rem;
+  }
+
+  .create-account-info {
+    margin-top: 15rem;
+    margin-left: 4rem;
+  }
+
+  #first_name,
+  #last_name,
+  #email,
+  #number,
+  #password,
+  #confirm_password {
+    font-size: 0.8rem;
+  }
+
+  .form {
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  #create-btn {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  #leaves {
+    height: 100%;
+  }
+
+  #odin-linked {
+    margin-left: -5rem;
+  }
+
+  .form-information {
+    margin-left: 23rem;
+  }
+
+  .confirm-password {
+    margin-left: 0rem;
+  }
+
+  #confirm_password {
+    margin-left: 0rem;
+  }
+
+  .conf-pass {
+    left: 10rem;
+    top: 0.5rem;
+  }
+
+  .pass {
+    top: 0.5rem;
+  }
+
+  .first_name:focus {
+    border: 1px solid blue;
+    outline: none;
+    height: 1.9rem;
+  }
+
+  #last_name:focus {
+    border: 1px solid blue;
+    outline: none;
+    height: 1.9rem;
+  }
+
+  .confirm-password,
+  .password,
+  .number,
+  .email,
+  .last_name,
+  .first_name {
+    height: 1.9rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+  }
+
+  #first_name,
+  #last_name,
+  #email,
+  #number,
+  #password,
+  #confirm_password {
+    font-size: 1rem;
+  }
+
+  .create-account-info {
+    margin-left: 23rem;
+    margin-top: 18rem;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .user-account {
+    font-size: 1.2rem;
+  }
+
+  #create-btn {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-information {
+    margin-left: 27rem;
+  }
+
+  #leaves {
+    height: 100%;
+  }
+
+  .first_name,
+  .last_name,
+  .email,
+  .number,
+  .password,
+  .confirm-password {
+    border: 1px solid black;
+    border-radius: 0.2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-information {
+    margin-left: 34rem;
+  }
+
+  .first_name,
+  .last_name,
+  .email,
+  .number,
+  .password,
+  .confirm-password {
+    height: 1.34rem;
+  }
+}
